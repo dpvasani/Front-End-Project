@@ -16,5 +16,6 @@ At the end of the 60 days, you'll have not only completed 60 unique projects, bu
 So come join us in this grand challenge and let's see what you can create in just 60 days!
 
 1) 3D-Boxes-Background-     11/03/2023 Saturday 
-2) Animated-Countdown-      12/03/2022 Sunday
-3) Animated-Navigation-     13/03/2022 Monday
+2) Animated-Countdown-      12/03/2023 Sunday
+3) Animated-Navigation-     13/03/2023 Monday
+4) Background-Slider-       14/03/2023 Wednesday
