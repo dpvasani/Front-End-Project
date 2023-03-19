@@ -23,3 +23,4 @@ So come join us in this grand challenge and let's see what you can create in jus
 6) Experience-              16/03/2023 Thursday 
 7) Blurry-Loading-          17/03/2023 Friday
 8) Button-Ripple-Effect-    18/03/2023 Saturday
+9) Content-PlaceHolder-     19/03/2023 Sunday
