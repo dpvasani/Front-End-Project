@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --font-regular:18px;
+    font-family: 'Epilogue', sans-serif;
+}
+.main header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+}
+
+.logo-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-nav a:hover{
+    font-weight: 700;
+}
+.btn-bg{
+    background: transparent;
+    border: none;
+    font-weight: 700;
+}
+.header-buttons{
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+.header-buttons button:hover{
+    cursor: pointer;
+}
+.register-btn{
+    outline: 1px solid black;
+    border-radius: .8rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.features ul, .company ul{
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    color: black;
+    list-style: none;
+    box-shadow: 12px 15px 50px 8px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+.features li, .company li{
+    padding: .5rem;
+}
+.features li:hover , .company li:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+li img{
+    margin-right: .5rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.hero-content{
+    max-width: 500px;
+}
+.hero-img{
+    max-width: 500px;
+}
+.hero h1{
+    font-size: 4rem;
+}
+.hero p{
+    font-size: var(--font-regular);
+    color: rgba(0, 0, 0, 0.75);
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
+.hero button{
+    border: none;
+    font-family: 'Epilogue', sans-serif;
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: .8rem;
+}
+.hero button:hover{
+    outline: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+.clients img{
+    max-width: 100px;
+}
+.clients{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.menu-btn,.menu{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+.menu {
+    position: relative;
+    right: 0%;
+
+}
+.menu ul{
+    list-style: none;
+    padding-top: 5rem;
+}
+.menu ul > li{
+    margin-bottom: 1rem;
+}
+.menu-features > ul,.menu-company > ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+.menu-list li {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.close-btn{
+    font-size: 2rem;
+    padding: 1re 2rem 1rem 2rem;
+    position: absolute;
+    right: 2%;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width:800px) {
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    header {
+        padding: 0;
+    }
+    .header-buttons{
+        display: none;
+    }
+    .menu-btn{
+        display: revert;
+    }
+    .links {
+        display: none;
+    }
+    .menu {
+        display: revert;
+        z-index: 2;
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+    }
+}
