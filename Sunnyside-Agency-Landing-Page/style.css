@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 18px;
+}
+/* Section Hero  */
+.hero{
+    min-height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.default-nav ul{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    margin-right: 2rem;
+    padding: 0;
+    font-size: 1rem;
+    list-style: none;
+    color: white;
+}
+.default-nav li:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.default-nav ul li:last-child{
+    font-family: 'Fraunces', serif;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5rem;
+}
+.default-nav ul li:last-child:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.hero h1{
+    font-size: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+    color: white;
+
+}
+.hero img:last-child{
+    height: 50%;
+    width: 50px;
+    margin: auto;
+}
+.hero img:last-child:hover{
+    opacity: 60%;
+    transition: all ease-in-out .5s;
+}
+/* Section Two  */
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(3,minmax(38rem,auto));
+    grid-template-columns: repeat(2,minmax(25rem,auto));
+    grid-template-areas: "grid-text-one grid-img-one"
+    "grid-img-two grid-text-two"
+    "grid-text-three grid-text-four";
+
+}
+
+.grid-container h2{
+    font-size: 3rem;
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.grid-container p{
+    width: 70%;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.grid-text-one{
+    grid-area: grid-text-one;
+    margin: auto;
+    max-width: 70%;
+}
+.grid-img-one{
+    grid-area: grid-img-one;
+    background-image: url(images/desktop/image-transform.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-text-two{
+    grid-area: grid-text-two;
+    max-width: 70%;
+    margin: auto;
+}
+.grid-img-two{
+    grid-area: grid-img-two;
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-text-three{
+    grid-area: grid-text-three;
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+.grid-text-four{
+    grid-area: grid-text-four;
+    background-image: url(images/desktop/image-photography.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+    color: hsl(198, 62%, 26%);
+}
+
+.grid-container a{
+    width: 100px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.linkdiv{
+    width: max-content;
+    height: auto;
+}
+
+.line-div{
+    position: relative;
+    margin: 0;
+    right: 5px;
+    z-index: -1;
+    top: -5px;
+    width: 120px;
+    opacity: 70%;
+    height: 10px;
+    border-radius: 10px;
+}
+.line-color1{
+    background-color: hsl(7, 99%, 70%);
+}
+.line-color2{
+    background-color: hsl(51, 100%, 49%);
+}
+.line-color1:hover{
+    background-color: hsl(51, 100%, 49%);
+}
+.line-color2:hover{
+    background-color: hsl(7, 99%, 70%);
+}
+/* Section Three  */
+.section-three{
+    text-align: center;
+}
+
+.section-three h3:first-child{
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    padding: 2rem 1rem 2rem 1rem;
+}
+.client img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+.client p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    max-width: 80%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.client h3{
+    font-family: 'Fraunces', serif;
+}
+.client h5{
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+/* Section four Image Grid  */
+.images-grids{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(auto,400px));
+    grid-template-rows: repeat(1,400px);
+}
+.img1{
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img2{
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3{
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img4{
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background-color:hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem 2rem 1rem ;
+}
+
+footer ul{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    color: white;
+    list-style: none;
+    margin-top: 2rem;
+}
+footer ul li:hover{
+    font-weight: 900;
+    cursor: pointer;
+}
+.footer-icons {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+.footer-icons i{
+    font-size: 1.5rem;
+}
+.footer-icons i:hover{
+    color: white;
+    font-size: 1.5rem;
+}
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.menu-btn > img{
+    max-width: 100%;
+    height: auto;
+}
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width:850px) {
+    .images-grids{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(auto,auto));
+        grid-template-rows: repeat(2,200px);
+        
+    }
+    .clients{
+        flex-direction: column;
+    }
+    .grid-container {
+        height: auto;
+        grid-template-rows: repeat(6,minmax(400px,auto));
+        grid-template-columns: auto;
+        grid-template-areas: "grid-img-one ..."
+        "grid-text-one ..."
+        "grid-img-two ..."
+        "grid-text-two ..."
+        "grid-text-three ..."
+        "grid-text-four ...";
+    }
+    .default-nav{
+        display: none;
+    }
+    header{
+        padding: 2rem;
+    }
+    .hero{
+        padding: 0;
+    }
+    .menu-btn{
+        display: revert;
+    }
+    .menu{
+        background-color: white;
+        display: revert;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu ul{
+        list-style: none;    
+        font-size: 2rem;
+        padding: 0;
+        text-align: center;
+    }
+    .menu ul li{
+        padding: .5rem;
+        font-family: 'Barlow', sans-serif;
+    }.menu ul li:hover{
+        font-weight: 900;
+    }
+    .grid-container{
+        text-align: center;
+        justify-content: center;
+    }
+    .linkdiv{
+        margin: auto;
+    }
+    .grid-container p{
+        width: revert;
+    }
+    .grid-text-four p, .grid-text-three p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .close-btn{
+        position: absolute;
+        top: 1rem;
+        right: 2.5rem;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+    }
+}
