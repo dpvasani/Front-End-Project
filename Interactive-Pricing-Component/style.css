@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+:root{
+    --transition: all ease-in-out .5s;
+}
+
+body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(230, 100%, 99%);
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+p{
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(225, 20%, 60%);
+    font-family: 'Manrope', sans-serif;
+}
+.container >h1, .container >p{
+    margin: 0;
+}
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 5rem;
+    width: 450px;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.1);
+}
+.sliderinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.slidervalue{
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.slider{
+    appearance: none;
+    display: flex;
+    width: 100%;
+    height:5px;
+    background-color: hsl(174, 77%, 80%);
+    outline: none;
+    opacity: .7;
+    transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 3rem;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(174, 86%, 45%);
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px hsl(174, 86%, 45%);
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: hsl(174, 75%, 30%);
+}
+
+.togglebtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 10px;
+}
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.discount-text{
+    background-color:hsl(14, 92%, 95%) ;
+    color: hsl(15, 100%, 70%);
+    border-radius: 50px;
+    padding: .2rem;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+.content {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content p {
+    margin: 0;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    text-align: start;
+}
+.content img{
+    margin-right: .5rem;
+    width: 13px;
+}
+
+.trialbtn{
+    color: hsl(225, 20%, 60%);
+    background-color: hsl(227, 35%, 25%);
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 3rem 1rem 3rem ;
+    font-weight: 600;
+
+}
+.trialbtn:hover{
+    color: white;
+    transition: var(--transition);
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch-slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(223, 50%, 87%);
+    transition: .4s;
+}
+.switch-slider:before{
+    position: absolute;
+    content: "";
+    top:2px;
+    left:2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .switch-slider{
+    background-color:hsl(174, 86%, 45%);
+}
+input:checked + .switch-slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+.switch-slider.round {
+    border-radius: 34px;
+} 
+.switch-slider.round:before {
+    border-radius: 50%;
+}
+
+@media screen and (max-width:600px) {
+    
+    .card{
+        width: revert;
+    }
+    .sliderinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .togglebtns{
+        display: flex;
+        flex-direction: column;
+        gap: revert;
+    }
+    .toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content p{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+}

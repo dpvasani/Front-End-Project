@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required. </p>
+    <div class="card">
+      <div class="sliderinfo">
+        <p class="page-views"><span class="pageviews">0k</span> Pageviews</p>
+        <p class="price-page-view"><span class="slidervalue">$</span><sup>/month</sup></p>
+      </div>
+      <div class="slider-container">
+        <input type="range" name="slider" class="slider" id="slider" min="1" max="5" value="1"></input>
+      </div>
+      <div class="togglebtns">
+        <div class="toggle">
+          <p>Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" class="togglebtn">
+            <span class="switch-slider round"></span>
+          </label>
+          <p>Yearly Billing</p>
+        </div>
+        <p class="discount-text">25% discount</p>
+      </div>
+      <div class="content">
+        <div class="content-points">
+          <p><img src="images/icon-check.svg"> Unlimited websites</p>
+          <p><img src="images/icon-check.svg"> 100% data ownership</p>
+          <p><img src="images/icon-check.svg"> Email reports</p>
+        </div>
+        <button class="trialbtn">Start my trial</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
