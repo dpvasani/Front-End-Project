@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generate a randomized password" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <main class="main-container">
+      <p class="paratop">generated password <span class="password-warning" style="color:red;"><span class="password-copied" style="color:green;"></span></p>
+      <div class="section-one">
+        <h1 class="passwordOutput">---</h1>
+        <img src="images/icon-copy.svg" class="copy-pass">
+      </div>
+      <div class="section-two">
+        <!-- Character length and number  -->
+        <div class="char-text">
+          <p>Character Length</p>
+          <h4 class="passwordlength">10</h4>
+        </div>
+        <!-- Slider -->
+        <div class="slider-container">
+          <input type="range" class="slider" min="8" max="30" value="11">
+        </div>
+        <div class="section-three">
+          <p>STRENGTH</p>
+          <div class="strength">
+            <p style="margin:0 ;" class="password-strength"></p>
+            <div class="bars" data-value="1"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+          </div>
+        </div>
+        <!-- Checkbox -->
+        <div class="checkboxs">
+          <label class="checkbox-container">
+            <input type="checkbox" class="uppercase-ltr">
+            <span class="checkmark"></span>
+            <p>Include UpperCase letters</p>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="lowercase-ltr">
+            <span class="checkmark"></span>
+            <p>Include lowercase letters</p>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="numbers">
+            <span class="checkmark"></span>
+            <p>Include numbers</p>
+          </label>
+          <label class="checkbox-container">
+            <input type="checkbox" class="symbols">
+            <span class="checkmark"></span>
+            <p>Include symbols</p> 
+          </label>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
