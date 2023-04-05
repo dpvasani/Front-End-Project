@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root{
+    --font-regular:13px;
+
+    --padding:2rem;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    margin: auto;
+    height: auto;
+
+    grid-template-columns: repeat(4,minmax(auto,255px));
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: "card1 card1 card2 card5"
+                        "card3 card4 card4 card5";
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main >div {
+    /* background-color: aqua; */
+    padding: var(--padding);
+    border-radius: 0.25rem;
+    box-shadow: 18px 14px 36px 4px rgba(31, 31, 31, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile h3 ,p {
+    margin: 0;
+}
+.profile p{
+    font-size: 12px;
+}
+.profile h3{
+    font-size: 14px;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 30px;
+
+    margin-right: 1rem;
+}
+
+p{
+    font-size: var(--font-regular);
+    color: rgba(255, 255, 255, 0.7);
+}
+h2{
+    font-size: 1.2rem;
+}
+
+
+.card1{
+    grid-area: card1;
+    color: white;
+    background: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 10%;
+    background-color: hsl(263, 55%, 52%);
+
+}
+.card1 h2,p{
+    z-index: 2;
+}
+.card2{
+    grid-area: card2;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+.card5{
+    grid-area: card5;
+}
+
+.card3 , .card5 {
+    color: black;
+}
+.card3 p, .card5 p{
+    color: hsla(0, 0%, 15%, 0.7);
+}
+
+@media screen and (max-width:900px) {
+    main {
+        display: grid;
+        margin: 2rem;
+        grid-template-columns: repeat(1,minmax(auto,250px));
+        grid-template-areas: "card1 card1"
+                            "card2 card2"
+                            "card3 card3"
+                            "card4 card4"
+                            "card5 card5";
+        gap: 2rem;
+    }
+    
+}
