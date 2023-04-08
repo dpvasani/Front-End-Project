@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.header-text {
+  max-width: 300px;
+  font: 0.5rem;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  margin: auto;
+  max-width: 50rem;
+}
+
+.profile img {
+  width: 12rem;
+}
+.profile p {
+  position: relative;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-size: 1rem;
+  right: -7rem;
+  bottom: 15rem;
+}
+.profile > h5 {
+  margin: 0;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.profile:nth-child(2) {
+  padding-top: 4rem;
+}
+.profile:nth-child(5) {
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding: revert;
+    margin: revert;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .profile {
+    margin: revert;
+    width: fit-content;
+  }
+
+  .profile img {
+    width: 8rem;
+  }
+  .profile p {
+    position: relative;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-size: 0.8rem;
+    right: -4.5rem;
+    bottom: 11.2rem;
+  }
+  .profile > h5 {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .profile:nth-child(2) {
+    padding-top: 4rem;
+  }
+  .profile:nth-child(4) {
+    padding-top: 4rem;
+  }
+  .profile:nth-child(6) {
+    padding-top: 4rem;
+  }
+  .profile:nth-child(5) {
+    padding-top: revert;
+  }
+}
