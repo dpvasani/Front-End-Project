@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="advice-card">
+        <h2 class="advice-id">ADVICE #<span id="adviceid"></span></h2>
+        <h1>"<span id="advicetext"></span>"</h1>
+        <img class="divide-mobile" src="images/pattern-divider-mobile.svg" />
+        <img class="divide-desktop" src="images/pattern-divider-desktop.svg"/>
+        <button id="dicebtn">
+          <img src="images/icon-dice.svg" />
+        </button>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
