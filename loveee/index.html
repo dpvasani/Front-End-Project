@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full">
+  
+        <div id="contain4">
+          <div class="neon4">
+            <div class="sign4">
+              M A K E 
+            </div>
+          </div>
+        </div>
+        
+              <i class="fa fa-heart-o fa-2x lob" aria-hidden="true"></i>
+              <i class="fa fa-heart-o fa-3x loc" aria-hidden="true"></i>
+        
+        
+        <div id="container">
+          <div class="neon-circle">
+            <div class="sign-one">
+              L O
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <svg class="defs-only" xmlns="http://www.w3.org/2000/svg">
+          
+           <!-- ADD GRADIENT DEFS -->
+              <filter id = "i11" width = "550%" height = "550%">
+                <feOffset result = "offOut" in = "SourceGraphic" dx = "1" dy = "1"/>
+                <feGaussianBlur result = "blurOut" in = "offOut" stdDeviation = "2"/>
+                <feBlend in = "SourceGraphic" in2 = "blurOut" mode = "normal"/>
+                
+                
+           <feSpecularLighting in="blurOut" surfaceScale="20" specularConstant=".05" specularExponent="8" lighting-color="#bbbbbb" result="specOut">
+                        <fePointLight x="5000" y="10000" z="2000" />
+        
+                      </feSpecularLighting>
+              <feComposite in="specOut" in2="offOut" operator="in" result="specOut" />
+              <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="20" k2="2" k3="2" k4="0" result="litPaint" />
+              <feMerge>
+                        <feMergeNode in="offOut" />
+                <feMergeNode in="litPaint" />
+        
+              </feMerge>
+        
+             
+            </filter>
+          
+          <linearGradient id="coin">
+            <stop offset="0%" stop-color="#fefe80" />
+           <stop offset="50%" stop-color="#fe80be" />
+           <stop offset="65%" stop-color="#80befe" />
+           <stop offset="90%" stop-color="#d82801" />
+          </linearGradient>
+          
+          
+          <radialGradient id="pot" fx="30%" fy="35%">
+            <stop stop-color="white" offset="0%" />
+            <stop stop-color="gold" offset="15%" />
+            <stop stop-color="goldenrod" offset="80%" />
+            <stop stop-color="darkgoldenrod" offset="100%" />
+          </radialGradient>
+          
+          
+          <symbol id="potofgold" >
+            <g fill="url(#coin)" stroke="darkgoldenrod" stroke-width="0.5">
+              
+          <path fill="none" stroke="url(#coin)" stroke-width="4" filter = "url(#i11)"
+                  d="M39,43 L77,43 Q86,36,74,31 Q77,22,68,20 Q70,5,54,9 Q59,9,55,12 Q61,16,50,18 Q58,25,65,22 Q58,25,52,19 Q39,21,43,29 Q51,34,65,33 Q51,34,43,28 Q30,35,39,43" transform="translate(-20,-5)"
+                  />
+            </g>
+            
+            
+            <path fill="none" stroke="#d82801" stroke-width="2" filter = "url(#i11)"
+                  d="M41,6 L75,6 L58,39 L42,6" transform="translate(-20,35)"
+                  />
+          </symbol>
+        </svg>
+        <figure>
+        
+          <div>
+            <div class="scaling-svg-container" 
+                 >
+              <svg class="scaling-svg" viewBox="0 0 100 115" >
+                <use xlink:href="#potofgold"/>
+              </svg>
+            </div>
+          </div>
+        </figure>
+        
+        
+        <div id="contain2">
+          <div class="neon2">
+            <div class="sign2">
+              V 
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div id="contain3">
+          <div class="neon3">
+            <div class="sign3">
+              E 
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        </div>
+</body>
+</html>
