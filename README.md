@@ -1,26 +1,16 @@
-# 60-Days-Code
-"60 Days Code" is a frontend grand challenge. Improve skills with daily projects for 60 days, experiment with frameworks. Challenging yet manageable projects to complete in 60 days and improve frontend development skills.
+# Front-End-Project
+- Welcome to the "Front-End-Project" challenge! Are you ready to take your frontend development skills to the next level? 🚀💻 This challenge is designed to help you enhance your abilities and build a strong foundation in frontend web development.
 
+- In this repository, you will find a collection of challenging yet achievable projects that will span over a period of time. Each project is carefully curated to provide you with opportunities to explore various aspects of frontend development, experiment with different frameworks and tools, and gain hands-on experience in building real-world applications.
 
+- Whether you're a beginner looking to solidify your understanding of HTML, CSS, and JavaScript, or an experienced developer seeking to expand your knowledge in frontend frameworks like React, Vue.js, or Angular, this challenge is tailored to meet your needs.
 
-Welcome to the "60 Days Code" Grand Challenge! This is a repository where you can find daily frontend projects for 60 consecutive days.
+- Throughout the Front-End-Project challenge, you'll have the chance to dive into responsive design, user interface implementation, accessibility considerations, performance optimization, and more. 🎨✨ You'll be able to showcase your creativity, problem-solving skills, and attention to detail in each project you complete.
 
-As a frontend developer, it is important to constantly practice and improve your skills. This challenge is designed to help you do just that. Each day, a new project will be uploaded to this repository, giving you an opportunity to explore different technologies, design patterns, and best practices.
+- Additionally, by participating in this challenge, you'll join a community of like-minded developers who are on the same journey. You can share your progress, seek advice, and celebrate your achievements together, making the learning experience even more rewarding. 🌟🤝
 
-Whether you're a beginner looking to learn new skills or an experienced developer looking to refine your abilities, this challenge is for you. The projects are designed to be challenging yet manageable, so that you can make steady progress over the 60 days.
+- So, are you up for the challenge? Get ready to embark on an exciting journey of frontend development, acquire new skills, and build a portfolio of impressive projects that will set you apart in the world of web development. 🌐📚
 
-As you work through the projects, you'll have the opportunity to experiment with different frameworks and libraries, as well as develop your own custom solutions. You'll also be able to connect with other developers who are taking on the challenge and share your progress.
+- Let's make the web more beautiful, functional, and user-friendly together! 💪🌈🌍
 
-At the end of the 60 days, you'll have not only completed 60 unique projects, but you'll also have improved your frontend development skills and gained valuable experience working on a variety of different projects.
-
-So come join us in this grand challenge and let's see what you can create in just 60 days!
-
-1) 3D-Boxes-Background-     11/03/2023 Saturday 
-2) Animated-Countdown-      12/03/2023 Sunday
-3) Animated-Navigation-     13/03/2023 Monday
-4) Background-Slider-       14/03/2023 Tuesday     
-5) Blurry-Loading-          15/03/2023 Wednesday           
-6) Experience-              16/03/2023 Thursday 
-7) Blurry-Loading-          17/03/2023 Friday
-8) Button-Ripple-Effect-    18/03/2023 Saturday
-9) Content-PlaceHolder-     19/03/2023 Sunday
+## #FrontEndProject #WebDevelopment #ChallengeAccepted #FrontendSkills #WebDesign #HTML #CSS #JavaScript #React #VueJS #Angular
