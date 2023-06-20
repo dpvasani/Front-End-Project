@@ -1,0 +1,15 @@
+.slider-container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider {
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    height: 300px;
+    width: 10px;
+    margin: 0 20px;
+  }
+  
