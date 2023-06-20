@@ -1,0 +1,34 @@
+.container {
+    margin: 50px auto;
+    width: 500px;
+    text-align: center;
+}
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+input[type="text"], input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3e8e41;
+}
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
