@@ -1,0 +1,25 @@
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .player-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #play-pause-button {
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  #volume-slider {
+    width: 200px;
+    margin-right: 20px;
+  }
+  

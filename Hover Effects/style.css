@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+    background-color: red;
+  }
+  

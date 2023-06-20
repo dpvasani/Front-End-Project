@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #keycode {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
