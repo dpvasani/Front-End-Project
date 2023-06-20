@@ -1,0 +1,30 @@
+.faq-container {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+.faq-item {
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.faq-question {
+	margin: 0;
+	padding: 0;
+}
+
+.faq-answer {
+	margin: 10px 0;
+	padding: 0;
+	display: none;
+}
+
+.faq-toggle {
+	margin: 10px 0;
+	padding: 5px;
+	background-color: #ccc;
+	border: none;
+	cursor: pointer;
+}

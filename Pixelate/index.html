@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pixelate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Pixelate</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="canvas-container">
+        <canvas id="pixel-canvas"></canvas>
+      </section>
+
+      <section class="tools">
+        <h2>Tools</h2>
+        <div class="color-picker">
+          <input type="color" id="color-picker">
+          <label for="color-picker">Choose a color</label>
+        </div>
+        <button id="clear-btn">Clear</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
