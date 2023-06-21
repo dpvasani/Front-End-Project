@@ -1,0 +1,43 @@
+.accordion {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.accordion-item {
+	background-color: #f1f1f1;
+	margin: 0 0 1px;
+	padding: 10px;
+}
+
+.accordion-header {
+	cursor: pointer;
+	position: relative;
+}
+
+.accordion-header h2 {
+	margin: 0;
+	font-size: 16px;
+}
+
+.accordion-header .icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	height: 16px;
+	width: 16px;
+	background-image: url("arrow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+	max-height: 500px;
+}
