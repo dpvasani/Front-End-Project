@@ -3,71 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Generate a randomized password" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css">
   </head>
-<body>
-  <div class="container">
-    <h1>Password Generator</h1>
-    <main class="main-container">
-      <p class="paratop">generated password <span class="password-warning" style="color:red;"><span class="password-copied" style="color:green;"></span></p>
-      <div class="section-one">
-        <h1 class="passwordOutput">---</h1>
-        <img src="images/icon-copy.svg" class="copy-pass">
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
       </div>
-      <div class="section-two">
-        <!-- Character length and number  -->
-        <div class="char-text">
-          <p>Character Length</p>
-          <h4 class="passwordlength">10</h4>
+      <div class="settings">
+        <div class="setting">
+          <label>Password Length</label>
+          <input type="number" id="length" min="4" max="20" value="20">
         </div>
-        <!-- Slider -->
-        <div class="slider-container">
-          <input type="range" class="slider" min="8" max="30" value="11">
+        <div class="setting">
+          <label>Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked>
         </div>
-        <div class="section-three">
-          <p>STRENGTH</p>
-          <div class="strength">
-            <p style="margin:0 ;" class="password-strength"></p>
-            <div class="bars" data-value="1"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-          </div>
+        <div class="setting">
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked>
         </div>
-        <!-- Checkbox -->
-        <div class="checkboxs">
-          <label class="checkbox-container">
-            <input type="checkbox" class="uppercase-ltr">
-            <span class="checkmark"></span>
-            <p>Include UpperCase letters</p>
-          </label>
-          <label class="checkbox-container">
-            <input type="checkbox" class="lowercase-ltr">
-            <span class="checkmark"></span>
-            <p>Include lowercase letters</p>
-          </label>
-          <label class="checkbox-container">
-            <input type="checkbox" class="numbers">
-            <span class="checkmark"></span>
-            <p>Include numbers</p>
-          </label>
-          <label class="checkbox-container">
-            <input type="checkbox" class="symbols">
-            <span class="checkmark"></span>
-            <p>Include symbols</p> 
-          </label>
+        <div class="setting">
+          <label>Include numbers</label>
+          <input type="checkbox" id="numbers" checked>
+        </div>
+        <div class="setting">
+          <label>Include symbols</label>
+          <input type="checkbox" id="symbols" checked>
         </div>
       </div>
-    </main>
-  </div>
-  <script src="main.js"></script>
-</body>
+
+      <button class="btn btn-large" id="generate">
+        Generate Password
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
