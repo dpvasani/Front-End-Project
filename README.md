@@ -13,4 +13,3 @@
 
 - Let's make the web more beautiful, functional, and user-friendly together! 💪🌈🌍
 
-## #FrontEndProject #WebDevelopment #ChallengeAccepted #FrontendSkills #WebDesign #HTML #CSS #JavaScript #React #VueJS #Angular
